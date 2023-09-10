@@ -9,6 +9,16 @@
     }
 }
 
+a {
+    text-decoration: none;
+    transition: 600ms ease;
+
+    &:hover{
+        transform: scale(1.15);
+        transition: 600ms ease;
+    }
+}
+
 @font-face {
     font-family: Fredoka;
     src: url(../Directive-Four.otf);
