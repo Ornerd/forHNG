@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    color: white;
+
+    p {
+        color: rgba(255, 255, 255, 0.671);
+    }
+}
+
+@font-face {
+    font-family: Fredoka;
+    src: url(../Directive-Four.otf);
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: fredoka;
+    padding-top: 5%;
+    
+    .forHeader{
+        position: absolute;
+        top: 5%;
+
+        h1 {
+            color: white;
+            transform: scale(2.5);
+            z-index: 50;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            margin-top: 8%;
+        }
+    }
+   
+
+    img {
+        // width: 100%;
+        // max-width: 370px;
+        // height: 100vh;
+        // transform: scale(1.5);
+        // border: solid wheat;
+        // margin-top: 10%;
+        margin-left: -5%;
+        margin-right: 5%;
+    }
+
+    section{
+        margin-top: 5%;
+        width: 50%;
+        height: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        // background-color: wheat;
+
+        div {
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .first{
+            border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+            border-right: 2px solid rgba(255, 255, 255, 0.603);
+            // background-color: blue;
+        }
+        .second{
+            border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+            // border-right: 2px solid rgba(255, 255, 255, 0.603);
+        }
+        .third{
+            border-right: 2px solid rgba(255, 255, 255, 0.603);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        font-family: fredoka;
+        padding-top: 10%;
+
+    
+        .forHeader{
+            position: relative;
+    
+            h1 {
+                color: white;
+                transform: scale(1.5);
+                z-index: 50;
+                letter-spacing: 7px;
+                text-transform: uppercase;
+                margin-top: 8%;
+            }
+        }
+    
+        img {
+            // width: 100%;
+            // max-width: 370px;
+            // height: 100vh;
+            transform: scale(0.85);
+            border: solid rgba(255, 255, 255, 0.603);
+            margin: 0 auto;
+        }
+    
+        section{
+            width: 80%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            margin-bottom: 10%;
+    
+            div {
+                padding: 5%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    margin-bottom: 15%;
+                }
+            }
+    
+            .first{
+                border-top: 2px solid rgba(255, 255, 255, 0.603);
+                border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+                border-right: 2px solid rgba(255, 255, 255, 0.603);
+                // background-color: blue;
+            }
+            .second{
+                border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+                border-left: 2px solid rgba(255, 255, 255, 0.603);
+            }
+            .third{
+                border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+                border-right: 2px solid rgba(255, 255, 255, 0.603);
+            }
+
+            .fourth{
+                border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+                border-left: 2px solid rgba(255, 255, 255, 0.603);
+            }
+        }
+
+        .half-a-border-on-top {
+            border-top: 1px solid;
+            border-image: linear-gradient(to right, #000 50%, transparent 50%) 100% 1;
+          }
+    }
+    
+}

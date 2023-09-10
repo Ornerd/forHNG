@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  color: white;
+}
+* p {
+  color: rgba(255, 255, 255, 0.671);
+}
+
+@font-face {
+  font-family: Fredoka;
+  src: url(../Directive-Four.otf);
+}
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: fredoka;
+  padding-top: 5%;
+}
+body .forHeader {
+  position: absolute;
+  top: 5%;
+}
+body .forHeader h1 {
+  color: white;
+  transform: scale(2.5);
+  z-index: 50;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-top: 8%;
+}
+body img {
+  margin-left: -5%;
+  margin-right: 5%;
+}
+body section {
+  margin-top: 5%;
+  width: 50%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+body section div {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body section .first {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+  border-right: 2px solid rgba(255, 255, 255, 0.603);
+}
+body section .second {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+}
+body section .third {
+  border-right: 2px solid rgba(255, 255, 255, 0.603);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: fredoka;
+    padding-top: 10%;
+  }
+  body .forHeader {
+    position: relative;
+  }
+  body .forHeader h1 {
+    color: white;
+    transform: scale(1.5);
+    z-index: 50;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-top: 8%;
+  }
+  body img {
+    transform: scale(0.85);
+    border: solid rgba(255, 255, 255, 0.603);
+    margin: 0 auto;
+  }
+  body section {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-bottom: 10%;
+  }
+  body section div {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body section div p {
+    margin-bottom: 15%;
+  }
+  body section .first {
+    border-top: 2px solid rgba(255, 255, 255, 0.603);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+    border-right: 2px solid rgba(255, 255, 255, 0.603);
+  }
+  body section .second {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+    border-left: 2px solid rgba(255, 255, 255, 0.603);
+  }
+  body section .third {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+    border-right: 2px solid rgba(255, 255, 255, 0.603);
+  }
+  body section .fourth {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+    border-left: 2px solid rgba(255, 255, 255, 0.603);
+  }
+  body .half-a-border-on-top {
+    border-top: 1px solid;
+    -o-border-image: linear-gradient(to right, #000 50%, transparent 50%) 100% 1;
+       border-image: linear-gradient(to right, #000 50%, transparent 50%) 100% 1;
+  }
+}/*# sourceMappingURL=style.css.map */

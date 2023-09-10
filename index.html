@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for HNG, with love</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="forHeader">
+        <p>Slack Name:</p>
+        <h1 data-testid="slackUserName">Orbytal</h1>
+    </div>
+
+    <img data-testid="slackDisplayImage" src="Screenshot (295)_1.png" alt="Orbytal">
+
+    <section>
+        <div class="first">
+            <p>Current day of the week:</p>
+            <h2 data-testid="currentDayOfTheWeek"></h2>
+        </div>
+        <div class="second">
+            <p>Current UTC time (in MilliSeconds):</p>
+            <h2 data-testid="currentUTCTime"></h2>
+        </div>
+        <div class="third">
+            <p>My Track:</p>
+            <h2 data-testid="myTrack">Frontend</h2>
+        </div>
+        <div class="fourth">
+            <p>Link to source code:</p>
+            <h3 data-testid="githubURL">https:/....</h3>
+        </div>
+    </section>
+    
+</body>
+
+<script>
+
+    const weekDay = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; 
+    const dd = new Date();
+    var day = weekDay[dd.getDay()];
+    document.querySelector('[data-testid="currentDayOfTheWeek"]').innerHTML = day;    
+
+    const timeNow = function(){
+        const theTime = Date.now();
+        document.querySelector('[data-testid="currentUTCTime"]').innerHTML = theTime;
+    }
+
+    setInterval(timeNow, 1000);
+
+</script>
+</html>
